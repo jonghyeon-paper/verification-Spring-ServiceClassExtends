@@ -19,7 +19,7 @@ public class Hello1Controller {
 	
 	@RequestMapping("/list")
 	@ResponseBody
-	public List<?> getUserList() {
+	public List<Users> getUserList() {
 		return hello1Service.getUserList(new Users());
 	}
 
