@@ -16,6 +16,7 @@ public class Hello2Service implements Hello2ServiceInterface {
 	
 	@Override
 	public List<Users> getUserList() {
+		System.out.println("hello2");
 		return userMapper.selectList(new Users());
 	}
 
