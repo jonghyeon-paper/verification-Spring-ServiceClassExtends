@@ -4,6 +4,5 @@ import java.util.List;
 
 public abstract class Hello3ServiceAbstract<T> {
 
-	public abstract List<T> getUserList();
-	public abstract List<T> getUserRoleList(String userId);
+	public abstract List<T> getUserList(T object);
 }

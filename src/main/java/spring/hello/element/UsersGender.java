@@ -25,7 +25,7 @@ public enum UsersGender {
 	public String getStoredValue() {
 		return storedValue;
 	}
-
+	
 	public Integer getCodeValue() {
 		return codeValue;
 	}

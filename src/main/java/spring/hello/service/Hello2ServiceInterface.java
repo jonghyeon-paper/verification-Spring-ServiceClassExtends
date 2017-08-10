@@ -6,6 +6,5 @@ import spring.hello.model.Users;
 
 public interface Hello2ServiceInterface {
 
-	List<Users> getUserList();
-	List<String> getUserRoleList(String userId);
+	List<Users> getUserList(Users user);
 }

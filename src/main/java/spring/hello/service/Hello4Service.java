@@ -15,9 +15,9 @@ public class Hello4Service extends Hello4ServiceAbstract<Users> {
 	private UserMapper userMapper;
 	
 	@Override
-	public List<Users> getUserList() {
+	public List<Users> getUserList(Users user) {
 		System.out.println("hello4");
-		return userMapper.selectList(new Users());
+		return userMapper.selectList(user);
 	}
 	
 }

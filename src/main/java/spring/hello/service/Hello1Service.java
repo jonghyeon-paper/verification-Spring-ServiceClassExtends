@@ -14,13 +14,9 @@ public class Hello1Service {
 	@Autowired
 	private UserMapper userMapper;
 	
-	public List<Users> getUserList() {
+	public List<Users> getUserList(Users user) {
 		System.out.println("hello1");
-		return userMapper.selectList(new Users());
-	}
-	
-	public List<String> getUserRoleList(String userId) {
-		return userMapper.selectRoleList(userId);
+		return userMapper.selectList(user);
 	}
 	
 }

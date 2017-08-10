@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import spring.hello.model.Users;
 import spring.hello.service.Hello4Service;
 
 @RestController
@@ -19,7 +20,7 @@ public class Hello4Controller {
 	@RequestMapping("/list")
 	@ResponseBody
 	public List<?> getUserList() {
-		return hello4Service.getUserList();
+		return hello4Service.getUserList(new Users());
 	}
 
 }

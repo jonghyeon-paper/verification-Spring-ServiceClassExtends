@@ -9,20 +9,15 @@ import spring.hello.model.Users;
 import spring.hello.persistence.UserMapper;
 
 @Service
-public class Hello3Service extends Hello3ServiceAbstract {
+public class Hello3Service extends Hello3ServiceAbstract<Users> {
 
 	@Autowired
 	private UserMapper userMapper;
 	
 	@Override
-	public List<Users> getUserList() {
+	public List<Users> getUserList(Users user) {
 		System.out.println("hello3");
 		return userMapper.selectList(new Users());
 	}
-	
-	@Override
-	public List<String> getUserRoleList(String userId) {
-		return userMapper.selectRoleList(userId);
-	}
-	
+
 }

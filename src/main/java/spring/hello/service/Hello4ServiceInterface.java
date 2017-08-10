@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface Hello4ServiceInterface<T> {
 
-	List<T> getUserList();
+	List<T> getUserList(T object);
 }
